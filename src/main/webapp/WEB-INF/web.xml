@@ -1,0 +1,482 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!--访问DetailsServlet  by:huangwei-->
+  <servlet>
+    <servlet-name>DetailsServlet</servlet-name>
+    <servlet-class>studyarea.resource.servlet.DetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetailsServlet</servlet-name>
+    <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+<!--查看个人信息-->
+  <servlet>
+    <servlet-name>UserInfoServlet</servlet-name>
+    <servlet-class>usercenter.userInfo.servlet.UserInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInfoServlet</servlet-name>
+    <url-pattern>/userinfo</url-pattern>
+  </servlet-mapping>
+<!--修改个人信息-->
+  <servlet>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>usercenter.userInfo.servlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/userUpdate</url-pattern>
+  </servlet-mapping>
+<!--修改头像-->
+  <servlet>
+    <servlet-name>UserImgServlet</servlet-name>
+    <servlet-class>usercenter.userInfo.servlet.UserImgServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserImgServlet</servlet-name>
+    <url-pattern>/userimg</url-pattern>
+  </servlet-mapping>
+
+    <!--个人中心头像-->
+    <servlet>
+        <servlet-name>UserImgCenterServlet</servlet-name>
+        <servlet-class>usercenter.userInfo.servlet.AllImgServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserImgCenterServlet</servlet-name>
+        <url-pattern>/userCenterimg</url-pattern>
+    </servlet-mapping>
+
+
+
+  <!--我的课程表-->
+  <servlet>
+    <servlet-name>MycourseServlet</servlet-name>
+    <servlet-class>usercenter.mycourse.servlet.MycourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MycourseServlet</servlet-name>
+    <url-pattern>/mycourse</url-pattern>
+  </servlet-mapping>
+
+  <!--课程评价-->
+  <servlet>
+    <servlet-name>EvaluteServlet</servlet-name>
+    <servlet-class>usercenter.evalute.servlet.EvaluteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EvaluteServlet</servlet-name>
+    <url-pattern>/evalute</url-pattern>
+  </servlet-mapping>
+
+  <!--查看课程评价-->
+  <servlet>
+    <servlet-name>FindEvaluteServlet</servlet-name>
+    <servlet-class>studyarea.evalute.servlet.FindEvaluteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindEvaluteServlet</servlet-name>
+    <url-pattern>/findEvalute</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>signin</servlet-name>
+    <servlet-class>usercenter.signin.servlet.SigninServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>signin</servlet-name>
+  <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>listServlet</servlet-name>
+    <servlet-class>studyarea.resource.list.Servlet.ListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>listServlet</servlet-name>
+    <url-pattern>/listServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+
+  <servlet>
+    <servlet-name>clicksignin</servlet-name>
+    <servlet-class>usercenter.signin.servlet.CilckSigninServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>clicksignin</servlet-name>
+    <url-pattern>/clicksignin</url-pattern>
+  </servlet-mapping>
+
+  <!--进入预约课程页面的接口   张乐成-->
+  <servlet>
+    <servlet-name>GoAppointServlet</servlet-name>
+    <servlet-class>studyarea.interact.appointment.servlet.GoAppointServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoAppointServlet</servlet-name>
+    <url-pattern>/goAppointServlet</url-pattern>
+  </servlet-mapping>
+  <!--预约课程详情的接口   张乐成-->
+  <servlet>
+    <servlet-name>AppointDetailServlet</servlet-name>
+    <servlet-class>studyarea.interact.appointment.servlet.AppointDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointDetailServlet</servlet-name>
+    <url-pattern>/appointDetailServlet</url-pattern>
+  </servlet-mapping>
+  <!--预约课程申请的接口     张乐成-->
+  <servlet>
+    <servlet-name>AppointApplyServlet</servlet-name>
+    <servlet-class>studyarea.interact.appointment.servlet.AppointApplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointApplyServlet</servlet-name>
+    <url-pattern>/appointApplyServlet</url-pattern>
+  </servlet-mapping>
+  <!--申请考试的接口        张乐成-->
+  <servlet>
+    <servlet-name>ExamApplyServlet</servlet-name>
+    <servlet-class>studyarea.practice.exam.servlet.ExamApplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExamApplyServlet</servlet-name>
+    <url-pattern>/examApplyServlet</url-pattern>
+  </servlet-mapping>
+  <!--提交考试内容的接口           张乐成-->
+  <servlet>
+    <servlet-name>ExamResultServlet</servlet-name>
+    <servlet-class>studyarea.practice.exam.servlet.ExamResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExamResultServlet</servlet-name>
+    <url-pattern>/examResultServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--访问CollectionServlet   by:huangwei-->
+  <servlet>
+    <servlet-name>CollectionServlet</servlet-name>
+    <servlet-class>studyarea.resource.servlet.CollectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CollectionServlet</servlet-name>
+    <url-pattern>/collection</url-pattern>
+  </servlet-mapping>
+
+  <!--登陆注册========================================================-->
+  <servlet>
+    <servlet-name>regist</servlet-name>
+    <servlet-class>loginregist.servlet.RegistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>regist</servlet-name>
+    <url-pattern>/zuce</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>loginregist.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/denglu</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>registname</servlet-name>
+    <servlet-class>loginregist.servlet.CKusersNameServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registname</servlet-name>
+    <url-pattern>/CKusersNameServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>registemail</servlet-name>
+    <servlet-class>loginregist.servlet.CKemailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registemail</servlet-name>
+    <url-pattern>/CKemailServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>registphone</servlet-name>
+    <servlet-class>loginregist.servlet.CKphoneServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registphone</servlet-name>
+    <url-pattern>/CKphoneServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>lookpwd</servlet-name>
+    <servlet-class>loginregist.servlet.LookpwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lookpwd</servlet-name>
+    <url-pattern>/look</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>lookpwdtrue</servlet-name>
+    <servlet-class>loginregist.servlet.LookpwdTrueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lookpwdtrue</servlet-name>
+    <url-pattern>/looktrue</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>PictureCheckCode</servlet-name>
+    <servlet-class>loginregist.servlet.PictureCheckCode</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>PictureCheckCode</servlet-name>
+    <url-pattern>/pictureCheckCode</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CheckCode</servlet-name>
+    <servlet-class>loginregist.servlet.CkcodeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckCode</servlet-name>
+    <url-pattern>/CkcodeServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--登陆注册==========================================================-->
+
+
+
+  <!--公告通知-->
+  <servlet>
+    <servlet-name>SelectNoticeServlet</servlet-name>
+    <servlet-class>studyarea.notice.servlet.SelectNoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectNoticeServlet</servlet-name>
+    <url-pattern>/notice</url-pattern>
+  </servlet-mapping>
+
+  <!--公告通知详情-->
+  <servlet>
+    <servlet-name>NoticeDetailServlet</servlet-name>
+    <servlet-class>studyarea.notice.servlet.NoticeDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoticeDetailServlet</servlet-name>
+    <url-pattern>/noticeDetail</url-pattern>
+  </servlet-mapping>
+
+  <!--删除公告通知-->
+  <servlet>
+    <servlet-name>DelNoticeServlet</servlet-name>
+    <servlet-class>studyarea.notice.servlet.DelNoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelNoticeServlet</servlet-name>
+    <url-pattern>/delNotice</url-pattern>
+  </servlet-mapping>
+
+  <!--发布公告通知-->
+  <servlet>
+    <servlet-name>AddNoticeServlet</servlet-name>
+    <servlet-class>studyarea.notice.servlet.AddNoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddNoticeServlet</servlet-name>
+    <url-pattern>/addNotice</url-pattern>
+  </servlet-mapping>
+
+  <!--退出登录-->
+  <servlet>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>usercenter.exit.ExitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/exit</url-pattern>
+  </servlet-mapping>
+
+  <!--意见反馈-->
+  <servlet>
+    <servlet-name>ComplaintServlet</servlet-name>
+    <servlet-class>usercenter.complaint.servlet.ComplaintServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ComplaintServlet</servlet-name>
+    <url-pattern>/complaint</url-pattern>
+  </servlet-mapping>
+
+  <!--我的收藏-->
+  <servlet>
+    <servlet-name>MyCollectionServlet</servlet-name>
+    <servlet-class>usercenter.mytracks.servlet.MyCollectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyCollectionServlet</servlet-name>
+    <url-pattern>/myCollection</url-pattern>
+  </servlet-mapping>
+
+  <!--我的下载-->
+  <servlet>
+    <servlet-name>MyDownloadServlet</servlet-name>
+    <servlet-class>usercenter.mytracks.servlet.MyDownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyDownloadServlet</servlet-name>
+    <url-pattern>/myDownload</url-pattern>
+  </servlet-mapping>
+
+  <!--我的上传-->
+  <servlet>
+    <servlet-name>MyUploadServlet</servlet-name>
+    <servlet-class>usercenter.mytracks.servlet.MyUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyUploadServlet</servlet-name>
+    <url-pattern>/myUpload</url-pattern>
+  </servlet-mapping>
+
+  <!--删除我的上传-->
+  <servlet>
+    <servlet-name>DelMyDownload</servlet-name>
+    <servlet-class>usercenter.mytracks.servlet.DelMyDownload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelMyDownload</servlet-name>
+    <url-pattern>/delMyDownload</url-pattern>
+  </servlet-mapping>
+
+  <!--删除我的下载-->
+  <servlet>
+    <servlet-name>DelMyUpload</servlet-name>
+    <servlet-class>usercenter.mytracks.servlet.DelMyUpload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelMyUpload</servlet-name>
+    <url-pattern>/delMyUpload</url-pattern>
+  </servlet-mapping>
+
+  <!--访问LikeServlet  点赞  by:huangwei-->
+  <servlet>
+    <servlet-name>LikeServlet</servlet-name>
+    <servlet-class>studyarea.resource.servlet.LikeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LikeServlet</servlet-name>
+    <url-pattern>/like</url-pattern>
+  </servlet-mapping>
+
+
+
+  <!--访问问答区提交评论servlet  qujia-->
+  <servlet>
+    <servlet-name>QuestionAreaServlet</servlet-name>
+    <servlet-class>studyarea.interact.questionarea.servlet.QuestionAreaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuestionAreaServlet</servlet-name>
+    <url-pattern>/questionArea</url-pattern>
+  </servlet-mapping>
+  <!--访问问答区首页servlet  qujia-->
+  <servlet>
+    <servlet-name>ListServlet</servlet-name>
+    <servlet-class>studyarea.interact.questionarea.servlet.ListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListServlet</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  <!--提问时  确定是否登陆servlet  qujia-->
+  <servlet>
+    <servlet-name>OrServlet</servlet-name>
+    <servlet-class>studyarea.interact.questionarea.servlet.OrLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrServlet</servlet-name>
+    <url-pattern>/orServlet</url-pattern>
+  </servlet-mapping>
+  <!--访问回复评论的servlet  qujia-->
+  <servlet>
+    <servlet-name>AnswerListServlet</servlet-name>
+    <servlet-class>studyarea.interact.questionarea.servlet.AnswerListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnswerListServlet</servlet-name>
+    <url-pattern>/answerlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ShareServlet</servlet-name>
+    <servlet-class>studyarea.resource.servlet.ShareServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShareServlet</servlet-name>
+    <url-pattern>/share</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>studyarea.resource.servlet.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+<!--我的钱包-->
+  <servlet>
+    <servlet-name>CoinServlet</servlet-name>
+    <servlet-class>usercenter.mywallet.servlet.CoinServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CoinServlet</servlet-name>
+    <url-pattern>/coinServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--我的消费记录-->
+  <servlet>
+    <servlet-name>ConsumerRecordServlet</servlet-name>
+    <servlet-class>usercenter.mywallet.servlet.ConsumerRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConsumerRecordServlet</servlet-name>
+    <url-pattern>/consumerRecordServlet</url-pattern>
+  </servlet-mapping>
+  <!--添加积分或消费积分-->
+  <servlet>
+    <servlet-name>AlterCoinServlet</servlet-name>
+    <servlet-class>usercenter.mywallet.servlet.AlterCoinServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlterCoinServlet</servlet-name>
+    <url-pattern>/alterCoinServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--购买资源  by:huangwei-->
+  <servlet>
+    <servlet-name>PurchaseServlet</servlet-name>
+    <servlet-class>studyarea.resource.servlet.PurchaseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PurchaseServlet</servlet-name>
+    <url-pattern>/purchase</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
